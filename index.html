@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- 
+    Create
+    Read
+    Update
+    Delete
+
+    Filter
+    Animate
+
+    email
+    
+   -->
+    <div class="container">
+      <h1>Contacts</h1>
+      <form type="submit" id="name-form">
+        <div class="row">
+          <!-- Name -->
+          <div class="form-group col-6">
+            <label>Enter new contact: </label>
+            <input
+              type="text"
+              class="form-control input-custom"
+              id="name-input"
+            />
+          </div>
+          <!-- Family/Friend radio -->
+          <div class="col-3">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  id="family"
+                  name="category"
+                  value="family"
+                  class="form-check-input"
+                />Family
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  id="friend"
+                  name="category"
+                  value="friend"
+                  class="form-check-input"
+                />Friend
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  id="work"
+                  name="category"
+                  value="work"
+                  class="form-check-input"
+                />Work
+              </label>
+            </div>
+          </div>
+
+          <!-- Options checkboxes -->
+          <!-- <div class="col-3">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  id="texts"
+                  name="options"
+                  class="form-check-input options"
+                  value="texts"
+                />Allow incoming texts
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  id="favorites"
+                  name="options"
+                  class="form-check-input options"
+                  value="favorites"
+                />Add to favorites
+              </label>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="row">
+          <!-- Email -->
+          <div class="form-group col">
+            <label>Email: </label>
+            <input type="text" class="form-control" id="email-input" />
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Phone -->
+          <div class="form-group col">
+            <label>Phone: </label>
+            <input type="text" class="form-control" id="phone-input" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <!-- Show after submission of all 3 - how do I check? -->
+
+      <!-- All Contacts -->
+      <!-- <table></table> -->
+      <!-- more detail button - dropdown? -->
+    </div>
+  </body>
+</html>
