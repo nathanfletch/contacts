@@ -17,12 +17,10 @@
     Filter
     Animate
 
-    email
-    
    -->
     <div class="container">
       <h1>Contacts</h1>
-      <form type="submit" id="name-form">
+      <form class="form" type="submit" id="name-form">
         <div class="row">
           <!-- Name -->
           <div class="form-group col-6">
@@ -115,8 +113,25 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 
-      <!-- Show after submission of all 3 - how do I check? -->
+      <!-- Show after submission-->
+      <div class="card mt-4" id="confirmation">
+        <div class="card-header bg-warning" >
+          <p class="card-title ">Please confirm the contact's information:</p>
 
+        </div>
+        <div class="card-body">
+          <p>Name: <span id="name-display"></span></p>
+          <p>Type of aquaintance: <span id="type-display"></span></p>
+          <p>Email: <span id="email-display"></span></p>
+          <p>Phone: <span id="phone-display"></span></p>
+        </div>
+        <div class="card-footer">
+          <div class="button-grp">
+            <button class="btn btn-primary" id="yes-button">Confirm</button>
+            <button class="btn btn-danger" id="no-button">Edit</button>
+          </div>
+        </div>
+      </div>
       <!-- All Contacts -->
       <!-- <table></table> -->
       <!-- more detail button - dropdown? -->

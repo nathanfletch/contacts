@@ -9,5 +9,11 @@ $(document).ready(function () {
     const phone = $('input#phone-input').val();
     console.log(contactType);
 
+    $('#name-display').text(name);
+    $('#type-display').text(contactType);
+    $('#email-display').text(email);
+    $('#phone-display').text(phone);
+
+    $('#confirmation').show();
   })
 })

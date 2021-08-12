@@ -1,3 +1,7 @@
 /* .input-custom {
   width: 50%;
 } */
+
+#confirmation {
+  display: none;
+}
