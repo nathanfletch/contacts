@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script src="js/jquery-3.6.0.js"></script>
@@ -115,9 +115,8 @@
 
       <!-- Show after submission-->
       <div class="card mt-4" id="confirmation">
-        <div class="card-header bg-warning" >
-          <p class="card-title ">Please confirm the contact's information:</p>
-
+        <div class="card-header bg-primary text-light" >
+          <h3 class="card-title">You entered:</h3>
         </div>
         <div class="card-body">
           <p>Name: <span id="name-display"></span></p>
@@ -127,14 +126,22 @@
         </div>
         <div class="card-footer">
           <div class="button-grp">
-            <button class="btn btn-primary" id="yes-button">Confirm</button>
+            <button class="btn btn-primary text-light" id="yes-button">Confirm</button>
             <button class="btn btn-danger" id="no-button">Edit</button>
           </div>
         </div>
       </div>
+
       <!-- All Contacts -->
-      <!-- <table></table> -->
-      <!-- more detail button - dropdown? -->
+      <table class="table table-hover mt-4" id="table">
+        <tr>
+          <th>Contact</th>
+          <th>Type</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        
+      </table>
     </div>
   </body>
 </html>
